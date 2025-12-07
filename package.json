@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/faranalytics/scalability.git"
+    "url": "git+https://github.com/adpatter/scalability.git"
   },
   "author": "FAR",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/faranalytics/scalability/issues"
+    "url": "https://github.com/adpatter/scalability/issues"
   },
-  "homepage": "https://github.com/faranalytics/scalability#readme",
+  "homepage": "https://github.com/adpatter/scalability#readme",
   "devDependencies": {
     "@eslint/js": "^9.6.0",
     "@types/eslint__js": "^8.42.3",
