@@ -3,11 +3,15 @@
   "version": "0.3.3",
   "description": "Scalability is a type-safe service scaling facility built on Network-Services.",
   "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "clean": "rm -rf ./dist/*",
     "build": "tsc --build .",
     "clean:build": "npm run clean && npm run build",
     "watch": "tsc --watch",
+    "lint": "npx eslint .",
+    "format": "npx prettier --write .",
+    "format:lint": "npm run format && npm run lint",
     "test": "npm update && npm run clean:build && npm update --prefix ./test && npm run clean:build --prefix ./test && npm start --prefix ./test"
   },
   "repository": {
@@ -20,14 +24,19 @@
     "url": "https://github.com/far-analytics/scalability/issues"
   },
   "homepage": "https://github.com/far-analytics/scalability#readme",
+  "engines": {
+    "npm": ">=10.8.2",
+    "node": ">=18.20.8"
+  },
   "devDependencies": {
-    "@eslint/js": "^9.6.0",
-    "@types/eslint__js": "^8.42.3",
+    "@eslint/js": "^9.37.0",
+    "@stylistic/eslint-plugin": "^5.4.0",
     "@types/node": "^20.11.28",
-    "eslint": "^8.57.0",
-    "typescript": "^5.7.2",
-    "typescript-eslint": "^7.15.0",
-    "nodemon": "^3.0.1"
+    "eslint": "^9.38.0",
+    "globals": "^16.4.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.1"
   },
   "dependencies": {
     "network-services": "^1.1.0"
